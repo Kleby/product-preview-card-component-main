@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #ddd3c8;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 450px;
+  margin-top: 100px;
+  width: 600px;
+}
+.container .item {
+  display: flex;
+  margin: 20px 10px;
+}
+.container .item img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px 0 0 10px;
+}
+.container .item .description {
+  padding: 16px;
+  background-color: #fff;
+}
+.container .item .description .span_perfume {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 16px 0 16px 8px;
+  letter-spacing: 3px;
+  color: #6c7289;
+  font-size: 0.9em;
+}
+.container .item .description h2 {
+  font-family: "Fraunces", serif;
+  font-size: 24px;
+  margin-right: 32px;
+  padding: 0 72px 0 20px;
+  font-weight: 700;
+}
+.container .item .description p {
+  color: #6c7289;
+  margin: 16px 0;
+  padding: 0 16px;
+}
+.container .item .description .price {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+  padding-left: 16px;
+}
+.container .item .description .price .price_perfume_after {
+  font-size: 32px;
+  font-family: "Fraunces", serif;
+  color: #008b61;
+  font-weight: 700;
+}
+.container .item .description .price .price_perfume_before {
+  color: #6c7289;
+  margin-left: 32px;
+  text-decoration: line-through;
+}
+.container .item .description .btn_add_cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 24px;
+  width: 90%;
+  background-color: #008b61;
+  color: #fff;
+  font-weight: bolder;
+  padding: 16px 60px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.container .item .description .btn_add_cart:hover {
+  background-color: #005226;
+}
+
+footer {
+  text-align: center;
+  background-color: #008b61;
+  width: 100%;
+  color: #ddd3c8;
+  padding: 16px;
+  font-size: 18px;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+}
+
+@media (max-width: 375px) {
+  .container {
+    display: inline-block;
+    margin: 0;
+    width: 90%;
+  }
+  .container .item {
+    flex-direction: column;
+  }
+  .container .item img {
+    border-radius: 10px 10px 0 0;
+    height: 250px;
+    object-fit: cover;
+  }
+  .container .item .description {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .item .description h2 {
+    padding: 0 0 0 16px;
+  }
+  .container .item .description p {
+    padding: 0;
+  }
+  .container .item .description .price {
+    margin: 10px 0;
+  }
+  .container .item .description .btn_add_cart {
+    margin: 0;
+  }
+  footer {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
